@@ -18,7 +18,7 @@ scene.background = new THREE.Color("white");
 
 //models
 const gltfLoader = new GLTFLoader();
-gltfLoader.load("/static/models/Elephant.glb", (file) => {
+gltfLoader.load("../static/models/Elephant.glb", (file) => {
 	elephant = file.scene.children[0];
 	sampler = new MeshSurfaceSampler(elephant).build();
 	path = new Path();
